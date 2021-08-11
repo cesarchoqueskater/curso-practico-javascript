@@ -101,6 +101,7 @@ function areaCirculo(radio) {
 console.groupEnd();
 
 // Aqui interactuamos con el HTML
+// Logica del Cuadrado
 function calcularPerimetroCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
@@ -115,4 +116,42 @@ function calcularAreaCuadrado() {
 
     const perimetro = areaCuadrado(value);
     alert(perimetro);
+}
+
+// Logica del Triangulo
+function calcularPerimetroTriangulo() {
+    const ladoTrianguloA = parseFloat(document.getElementById("ladoA").value);
+    console.log("🚀 ladoA", ladoA)
+    const ladoTrianguloB = parseFloat(document.getElementById("ladoB").value);
+    const baseTriangulo = parseFloat(document.getElementById("base").value);
+
+    const perimetro = perimetroTriangulo(ladoTrianguloA, ladoTrianguloB, baseTriangulo);
+    // console.log("🚀 perimetro : ", perimetro)
+    alert(perimetro);
+}
+
+function calcularAreaTriangulo() {
+    const baseTriangulo = document.getElementById("base").value;
+    const alturaTriangulo = document.getElementById("altura").value;
+    const area = areaTriangulo(baseTriangulo, alturaTriangulo);
+    // console.log("Area es : " + area);
+    alert(area);
+}
+
+function calcularPerimetroCircunferencia() {
+    const radioCircunferencia = document.getElementById("radio").value;
+    const perimetro = perimetroCirculo(radioCircunferencia);
+    alert(perimetro);
+}
+
+function calcularAreaCircunferencia() {
+    const radioCircunferencia = document.getElementById("radio").value;
+    const area = areaCirculo(radioCircunferencia);
+    alert(area);
+}
+
+function calcularDiametroCircunferencia() {
+    const radioCircunferencia = document.getElementById("radio").value;
+    const diametro = diametroCirculo(radioCircunferencia);
+    alert(diametro);
 }
