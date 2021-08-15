@@ -40,3 +40,27 @@ if (esPar(lista1.length)) {
 } else {
     mediana = lista1[mitadLista1];
 }
+
+let array = [];
+
+
+function listar() {
+    // const li = document.getElementById("lista").innerHTML;
+    var arrayData = array.map(function(element) {
+        // let liValue = element;
+
+        let liValue = "<li>" + element + "</li>"
+        return liValue;
+    }).join(" ");
+    document.getElementById("lista-data").innerHTML = arrayData;
+
+}
+
+
+function onClickAdd() {
+    const input = parseInt(document.getElementById("inputMediana").value);
+
+    let addArray = array.push(input);
+    console.log(addArray);
+    listar();
+}
