@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso Práctico de Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+         :root {
+            --color-white90: #FFF;
+            --color-white80: #F7F7F7;
+            --color-black90: #000;
+            --color-black80: #222222;
+            --color-black70: #383838;
+            --color-purple: #3D55E7;
+            --font: 'Exo 2', sans-serif;
+            --title-nav: bold 24px/28.8px var(--font);
+            --title-nav-description: bold 20px/24px var(--font);
+        }
+        
+        *,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Exo 2', sans-serif;
+        }
+        
+        .main {
+            display: grid;
+            grid-template-rows: auto 1fr;
+            height: 100vh;
+        }
+        
+        section {
+            gap: 10px;
+        }
+        
+        .nav {
+            text-align: center;
+            background: #222222;
+            color: #FFFFFF;
+            padding-block: 43px;
+        }
+        
+        .content {
+            background: #FFFFFF;
+        }
+        
+        .menu-nav {
+            /* inline-start: 12px; */
+            margin-block-start: 12px;
+        }
+        
+        .list {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            justify-content: center;
+            gap: 27px;
+        }
+        
+        .list li a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+        
+        .list li p {
+            display: none;
+        }
+        
+        @media screen and (min-width:414px) {}
+        
+        @media screen and (min-width:760px) {
+            .main {
+                display: grid;
+                grid-template-columns: 300px auto;
+            }
+            section {
+                gap: 10px;
+                height: 100vh;
+            }
+        }
+        
+        @media screen and (min-width:960px) {}
+        
+        @media screen and (min-width:1024px) {
+            .main {
+                display: grid;
+                grid-template-columns: 377px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <section class="nav">
+            <h2>
+                Curso Práctico de Javascript
+            </h2>
+            <div class="menu-nav">
+                <ul class="list">
+                    <li>
+                        <a href="#" target="_blank">Taller 1</a>
+                        <p>Fíguras Geómetricas</p>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Taller 2</a>
+                        <p>Fíguras Geómetricas</p>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Taller 3</a>
+                        <p>Fíguras Geómetricas</p>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">Taller 4</a>
+                        <p>Fíguras Geómetricas</p>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+        <section class="content">Figuras Geometricas</section>
+    </main>
+</body>
+
+</html>
