@@ -18,8 +18,10 @@
             --color-black70: #383838;
             --color-purple: #3D55E7;
             --font: 'Exo 2', sans-serif;
-            --title-nav: bold 24px/28.8px var(--font);
-            --title-nav-description: bold 20px/24px var(--font);
+            --title-nav-mobile: bold 22px/26px var(--font);
+            --subttitle-nav-mobile-description: 14px/16px var(--font);
+            --title-nav-desktop: bold 24px/28px var(--font);
+            --subttitle-nav-desktop-description: bold 20px/24px var(--font);
         }
         
         *,
@@ -39,19 +41,22 @@
             gap: 10px;
         }
         
+        .title-nav {
+            font: var(--title-nav-mobile);
+        }
+        
         .nav {
             text-align: center;
-            background: #222222;
-            color: #FFFFFF;
-            padding-block: 43px;
+            background: var(--color-black80);
+            color: var(--color-white90);
+            /* padding-block: 43px; */
         }
         
         .content {
-            background: #FFFFFF;
+            background: var(--color-white90);
         }
         
         .menu-nav {
-            /* inline-start: 12px; */
             margin-block-start: 12px;
         }
         
@@ -64,11 +69,16 @@
         }
         
         .list li a {
+            font: var(--subttitle-nav-mobile-description);
             text-decoration: none;
-            color: #FFFFFF;
+            color: var(--color-white90);
         }
         
         .list li p {
+            display: none;
+        }
+        
+        .btn-nav {
             display: none;
         }
         
@@ -83,6 +93,36 @@
                 gap: 10px;
                 height: 100vh;
             }
+            .title-nav {
+                display: none;
+            }
+            .list {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                gap: 35px;
+                margin-block-start: 160px;
+                margin-block-end: 221px;
+                margin-inline: 130px;
+            }
+            .list li a {
+                font: var(--title-nav-desktop);
+                color: var(--color-purple);
+            }
+            .list li p {
+                font: var(--subttitle-nav-desktop-description);
+                display: block;
+                margin-block: 12px;
+                color: var(--color-white90);
+            }
+            .btn-nav {
+                background: var(--color-black70);
+                display: inline-block;
+                border-radius: 20px;
+                cursor: pointer;
+                padding-block: 20px;
+                padding-inline: 66px;
+            }
         }
         
         @media screen and (min-width:960px) {}
@@ -90,7 +130,7 @@
         @media screen and (min-width:1024px) {
             .main {
                 display: grid;
-                grid-template-columns: 377px auto;
+                grid-template-columns: 477px auto;
             }
         }
     </style>
@@ -99,7 +139,7 @@
 <body>
     <main class="main">
         <section class="nav">
-            <h2>
+            <h2 class="title-nav">
                 Curso Práctico de Javascript
             </h2>
             <div class="menu-nav">
@@ -110,19 +150,21 @@
                     </li>
                     <li>
                         <a href="#" target="_blank">Taller 2</a>
-                        <p>Fíguras Geómetricas</p>
+                        <p>Precios y descuentos</p>
                     </li>
                     <li>
                         <a href="#" target="_blank">Taller 3</a>
-                        <p>Fíguras Geómetricas</p>
+                        <p>Promedios, Moda y Mediana</p>
                     </li>
                     <li>
                         <a href="#" target="_blank">Taller 4</a>
-                        <p>Fíguras Geómetricas</p>
+                        <p>Análisis Salarial</p>
                     </li>
                 </ul>
             </div>
-
+            <h2 class="btn-nav">
+                Curso Práctico de Javascript
+            </h2>
         </section>
         <section class="content">Figuras Geometricas</section>
     </main>
