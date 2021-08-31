@@ -49,7 +49,7 @@
             text-align: center;
             background: var(--color-black80);
             color: var(--color-white90);
-            /* padding-block: 43px; */
+            padding-block: 43px;
         }
         
         .content {
@@ -93,6 +93,9 @@
                 gap: 10px;
                 height: 100vh;
             }
+            .nav {
+                padding-block: 0px;
+            }
             .title-nav {
                 display: none;
             }
@@ -101,9 +104,9 @@
                 flex-direction: column;
                 text-align: left;
                 gap: 35px;
-                margin-block-start: 160px;
-                margin-block-end: 221px;
-                margin-inline: 130px;
+                margin-block-start: 100px;
+                margin-block-end: 121px;
+                margin-inline: 60px;
             }
             .list li a {
                 font: var(--title-nav-desktop);
@@ -117,11 +120,12 @@
             }
             .btn-nav {
                 background: var(--color-black70);
+                font: var(--subttitle-nav-desktop-description);
                 display: inline-block;
                 border-radius: 20px;
                 cursor: pointer;
                 padding-block: 20px;
-                padding-inline: 66px;
+                padding-inline: 10px;
             }
         }
         
@@ -131,6 +135,22 @@
             .main {
                 display: grid;
                 grid-template-columns: 477px auto;
+            }
+            .list {
+                display: flex;
+                flex-direction: column;
+                text-align: left;
+                gap: 35px;
+                margin-block-start: 160px;
+                margin-block-end: 221px;
+                margin-inline: 130px;
+            }
+            .btn-nav {
+                background: var(--color-black70);
+                font: var(--title-nav-desktop);
+                display: inline-block;
+                padding-block: 20px;
+                padding-inline: 66px;
             }
         }
     </style>
