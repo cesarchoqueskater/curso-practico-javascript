@@ -40,9 +40,14 @@ section {
     background: var(--color-black80);
     color: var(--color-white90);
     padding-block: 43px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
 }
 
 .content {
+    margin-block-start: 141px;
     background: var(--color-white90);
 }
 
@@ -146,6 +151,7 @@ section {
         justify-content: space-between;
         overflow-y: auto;
         padding-block: 0px;
+        position: static;
     }
     .title-nav {
         display: none;
@@ -187,6 +193,7 @@ section {
     }
     .content {
         overflow-y: auto;
+        margin-block-start: 0px;
     }
 }
 
