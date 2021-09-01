@@ -135,6 +135,13 @@ section {
     cursor: pointer;
 }
 
+.list-data {
+    text-align: left;
+    /* margin-block: 20px; */
+    margin-inline-start: 20px;
+    margin-block-end: 40px;
+}
+
 @media screen and (min-width:414px) {}
 
 @media screen and (min-width:760px) {
