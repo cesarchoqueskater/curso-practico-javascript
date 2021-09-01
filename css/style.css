@@ -185,6 +185,9 @@ section {
         margin-inline: 40px;
         margin-block-end: 50px;
     }
+    .content {
+        overflow-y: auto;
+    }
 }
 
 @media screen and (min-width:960px) {}
@@ -207,9 +210,22 @@ section {
     }
     .btn-nav {
         background: var(--color-black70);
-        /* font: var(--title-nav-desktop); */
         display: inline-block;
         padding-block: 20px;
         padding-inline: 10px;
+    }
+    .title-content {
+        text-align: left;
+        color: var(--color-black90);
+        margin-block-start: 124px;
+        margin-block-end: 107px;
+    }
+    .figure {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .input input {
+        margin-inline-start: 33px;
     }
 }
