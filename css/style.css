@@ -207,9 +207,9 @@ section {
     }
     .btn-nav {
         background: var(--color-black70);
-        font: var(--title-nav-desktop);
+        /* font: var(--title-nav-desktop); */
         display: inline-block;
         padding-block: 20px;
-        padding-inline: 66px;
+        padding-inline: 10px;
     }
 }
