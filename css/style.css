@@ -1,6 +1,7 @@
 :root {
     --color-white90: #FFF;
     --color-white80: #F7F7F7;
+    --color-grey40: #A3A6B8;
     --color-black90: #000;
     --color-black80: #222222;
     --color-black70: #383838;
@@ -10,6 +11,7 @@
     --subttitle-nav-mobile-description: 14px/16px var(--font);
     --title-nav-desktop: bold 24px/28px var(--font);
     --subttitle-nav-desktop-description: bold 20px/24px var(--font);
+    --title-content-mobile: bold 27px/33px var(--font);
 }
 
 *,
@@ -45,8 +47,8 @@ section {
 }
 
 .menu-nav {
-    /* margin-block-start: 12px; */
-    margin-block: 50px;
+    margin-block-start: 12px;
+    /* margin-block: 50px; */
 }
 
 .list {
@@ -71,6 +73,62 @@ section {
     display: none;
 }
 
+.wrapper {
+    margin-inline: 48px;
+    margin-block: 37px;
+}
+
+.title-content {
+    font: var(--title-content-mobile);
+    color: var(--color-purple);
+    text-align: center;
+    margin-block-end: 26px;
+}
+
+.figure-img {
+    text-align: center;
+    margin-block-end: 84px;
+}
+
+.figure-img h2 {
+    margin-block-start: 27px;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    margin-block: 40px;
+}
+
+.input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-block-end: 18px;
+    align-items: center;
+}
+
+.input label {
+    font-weight: bold;
+}
+
+.input input {
+    border: 1px solid var(--color-grey40);
+    background: var(--color-white80);
+    height: 26px;
+}
+
+.btn-calculate {
+    background: var(--color-black70);
+    color: var(--color-white90);
+    border-radius: 4px;
+    padding-block: 8px;
+    padding-inline: auto;
+    margin-block-end: 15px;
+    cursor: pointer;
+}
+
 @media screen and (min-width:414px) {}
 
 @media screen and (min-width:760px) {
@@ -91,6 +149,9 @@ section {
     }
     .title-nav {
         display: none;
+    }
+    .menu-nav {
+        margin-block: 50px;
     }
     .list {
         display: flex;
