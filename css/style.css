@@ -45,7 +45,8 @@ section {
 }
 
 .menu-nav {
-    margin-block-start: 12px;
+    /* margin-block-start: 12px; */
+    margin-block: 50px;
 }
 
 .list {
@@ -82,6 +83,10 @@ section {
         height: 100vh;
     }
     .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow-y: auto;
         padding-block: 0px;
     }
     .title-nav {
@@ -92,9 +97,9 @@ section {
         flex-direction: column;
         text-align: left;
         gap: 35px;
-        margin-block-start: 100px;
-        margin-block-end: 71px;
-        margin-inline: 60px;
+        /* margin-block-start: 100px;
+        margin-block-end: 71px; */
+        margin-inline: 40px;
     }
     .list li a {
         font: var(--title-nav-desktop);
@@ -108,12 +113,16 @@ section {
     }
     .btn-nav {
         background: var(--color-black70);
+        color: var(--color-white90);
         font: var(--subttitle-nav-desktop-description);
         display: inline-block;
+        border: none;
         border-radius: 20px;
         cursor: pointer;
         padding-block: 20px;
         padding-inline: 10px;
+        margin-inline: 40px;
+        margin-block-end: 50px;
     }
 }
 
@@ -122,16 +131,18 @@ section {
 @media screen and (min-width:1024px) {
     .main {
         display: grid;
-        grid-template-columns: 477px auto;
+        grid-template-columns: 400px auto;
+    }
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
     }
     .list {
         display: flex;
         flex-direction: column;
         text-align: left;
         gap: 35px;
-        margin-block-start: 160px;
-        margin-block-end: 221px;
-        margin-inline: 130px;
     }
     .btn-nav {
         background: var(--color-black70);
