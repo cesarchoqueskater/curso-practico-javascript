@@ -142,6 +142,14 @@ section {
     margin-block-end: 40px;
 }
 
+.result-ok {
+    color: green;
+}
+
+.result-error {
+    color: red;
+}
+
 @media screen and (min-width:414px) {}
 
 @media screen and (min-width:760px) {
