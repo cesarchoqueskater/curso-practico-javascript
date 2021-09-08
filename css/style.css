@@ -150,6 +150,10 @@ section {
     color: red;
 }
 
+.textResultTallerThree {
+    margin-block: 20px;
+}
+
 @media screen and (min-width:414px) {}
 
 @media screen and (min-width:760px) {
