@@ -47,7 +47,6 @@ function esPar(numerito) {
 
 function calculoMediana(arrayOrdenado) {
     let mitadArray = parseInt(arrayOrdenado.length / 2);
-    // console.log("🚀 La mitad del arraya es :" + mitadArray);
     let resultado = document.getElementById("resultGetCalculate");
     if (esPar(arrayOrdenado.length)) {
         console.log("Es par");
@@ -73,16 +72,14 @@ function calculoMediana(arrayOrdenado) {
 
 getMedian.addEventListener("click", function() {
     console.log("Boton Mediana Funcion");
-    // console.log(array.length);
-    // console.log("El array nuevo : " + array);
-    // const titulo_listaOrdenada = document.getElementById("list-data");
     if (arrayValue.length === 0) {
         console.log("No Tiene data");
     } else {
         console.log("Tiene data el array");
-        arrayOrdenado = arrayValue.sort();
-        console.log("🚀arrayOrdenado " + arrayOrdenado)
-            // titulo_listaOrdenada.innerText = "Se ordena la lista";
+        arrayOrdenado = arrayValue.sort(function(a, b) {
+            return a - b;
+        });
+        console.log("🚀arrayOrdenado " + arrayOrdenado);
         listValueArray(arrayOrdenado);
         calculoMediana(arrayOrdenado);
     }
