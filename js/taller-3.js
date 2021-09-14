@@ -116,3 +116,20 @@ getHalf.addEventListener("click", function() {
     // console.log("🚀La moda es s: ", moda[0]);
 
 });
+
+getAverage.addEventListener("click", function() {
+    let resultado = document.getElementById("resultGetCalculate");
+    const sumaLista = arrayValue.reduce(
+        function(valorAcumulado = 0, nuevoElemento) {
+            //Para esta caso estamos haciendo una suma, como si fuera un for
+            return valorAcumulado + nuevoElemento;
+        }
+    );
+    arrayOrdenado = arrayValue.sort(function(a, b) {
+        return a - b;
+    });
+    listValueArray();
+    const promedioLista = sumaLista / arrayValue.length;
+    // return promedioLista;
+    resultado.innerText = "EL promedio es: " + promedioLista;
+});
