@@ -3,6 +3,7 @@ const getMedian = document.getElementById('getMedian');
 const getHalf = document.getElementById('getHalf');
 const getAverage = document.getElementById('getAverage');
 
+// Mediana
 let arrayValue = [];
 
 addValueTaller3.addEventListener("click", function() {
@@ -79,8 +80,39 @@ getMedian.addEventListener("click", function() {
         arrayOrdenado = arrayValue.sort(function(a, b) {
             return a - b;
         });
-        console.log("🚀arrayOrdenado " + arrayOrdenado);
-        listValueArray(arrayOrdenado);
+        // console.log("🚀arrayOrdenado " + arrayOrdenado);
+        listValueArray();
         calculoMediana(arrayOrdenado);
     }
+});
+
+
+//Moda
+getHalf.addEventListener("click", function() {
+    let resultado = document.getElementById("resultGetCalculate");
+    const arrayValueNew = {};
+
+    arrayValue.map(
+        // Funcion anonima, que recibira cada una de las itereaciones
+        function(elemento) {
+            if (arrayValueNew[elemento]) {
+                arrayValueNew[elemento] += 1;
+            } else {
+                arrayValueNew[elemento] = 1;
+            }
+        }
+    )
+    const OjectArrayNew = Object.entries(arrayValueNew).sort(
+        function(elementA, elementB) {
+            return elementA[1] - elementB[1];
+        }
+    );
+    arrayOrdenado = arrayValue.sort(function(a, b) {
+        return a - b;
+    });
+    listValueArray();
+    const moda = OjectArrayNew[OjectArrayNew.length - 1];
+    resultado.innerText = "La moda es: " + moda[0];
+    // console.log("🚀La moda es s: ", moda[0]);
+
 });
