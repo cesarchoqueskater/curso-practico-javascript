@@ -81,7 +81,7 @@ section {
 
 .wrapper {
     margin-inline: 48px;
-    margin-block: 37px;
+    margin-block: 48px;
 }
 
 .title-content {
@@ -152,10 +152,19 @@ section {
 
 .textResultTallerThree,
 .textResultTallerFour {
+    color: green;
     margin-block: 20px;
 }
 
-@media screen and (min-width:414px) {}
+.about {
+    margin-block-start: 20px;
+}
+
+.me a {
+    text-decoration: none;
+    color: var(--color-purple);
+    font-weight: bold;
+}
 
 @media screen and (min-width:760px) {
     .main {
@@ -164,7 +173,6 @@ section {
     }
     section {
         gap: 10px;
-        /* height: 100vh; */
     }
     .nav {
         display: flex;
@@ -185,8 +193,6 @@ section {
         flex-direction: column;
         text-align: left;
         gap: 35px;
-        /* margin-block-start: 100px;
-        margin-block-end: 71px; */
         margin-inline: 40px;
     }
     .list li a {
@@ -230,6 +236,9 @@ section {
         flex-direction: column;
         justify-content: space-around;
     }
+    .me {
+        display: block;
+    }
     .list {
         display: flex;
         flex-direction: column;
@@ -248,12 +257,19 @@ section {
         margin-block-start: 124px;
         margin-block-end: 107px;
     }
+    .input input {
+        margin-inline-start: 33px;
+    }
+    .result-ok,
+    .result-error {
+        max-width: 288px;
+    }
+}
+
+@media screen and (min-width:1279px) {
     .figure {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-    }
-    .input input {
-        margin-inline-start: 33px;
     }
 }

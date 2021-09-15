@@ -6,12 +6,24 @@ let arrayValueSalary = [];
 addValueTaller4.addEventListener("click", function() {
     addValueArraySalary();
     listValueArraySalary();
+    document.getElementById("name-analysis").value = '';
+    document.getElementById("number-analysis").value = '';
 });
 
 function addValueArraySalary() {
-    const agregarValueListSalaryName = document.getElementById("name-analysis").value;
-    const agregarValueListSalaryNumber = parseInt(document.getElementById("number-analysis").value);
-    let valores = arrayValueSalary.push({ name: agregarValueListSalaryName, salary: agregarValueListSalaryNumber });
+    const valueNameAnalysis = document.getElementById("name-analysis").value;
+    const valueNumberAnalysis = document.getElementById("number-analysis").value;
+    if (valueNameAnalysis.length != '' & valueNumberAnalysis.length != '') {
+
+        const agregarValueListSalaryName = document.getElementById("name-analysis").value;
+        const agregarValueListSalaryNumber = parseInt(document.getElementById("number-analysis").value);
+        let valores = arrayValueSalary.push({ name: agregarValueListSalaryName, salary: agregarValueListSalaryNumber });
+
+    } else {
+        // console.log('No se puede agregar elementos vacios');
+        let resultado = document.getElementById("resultSalary");
+        resultado.innerText = "No se puede agregar elementos vacios";
+    }
 }
 
 function listValueArraySalary() {

@@ -9,12 +9,19 @@ let arrayValue = [];
 addValueTaller3.addEventListener("click", function() {
     addValueArray();
     listValueArray();
+    document.getElementById("number").value = '';
 });
 
 function addValueArray() {
-    const agregarValueList = parseInt(document.getElementById("number").value);
-    let valores = arrayValue.push(agregarValueList);
-    console.log(agregarValueList);
+    const valueAdd = document.getElementById("number").value;
+    if (valueAdd.length != '') {
+        const agregarValueList = parseInt(document.getElementById("number").value);
+        let valores = arrayValue.push(agregarValueList);
+        console.log(agregarValueList);
+    } else {
+        let resultado = document.getElementById("resultGetCalculate");
+        resultado.innerText = "No se puede agregar elementos vacios";
+    }
 }
 
 function listValueArray() {

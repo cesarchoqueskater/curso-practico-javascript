@@ -17,6 +17,7 @@ getPriceDiscount.addEventListener("click", function() {
         resultPriceDiscount.innerHTML = '<h3 class="result-error">El campo precio y descuento no pueden quedar vacios</h3>';
     } else {
         const getPriceDiscount = calculatePriceDiscount(priceData, discountData);
+        console.log(getPriceDiscount);
         resultPriceDiscount.innerHTML = '<h3 class="result-ok">El descuento es ' + getPriceDiscount + '</h3>';
     }
 });
