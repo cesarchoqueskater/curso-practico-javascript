@@ -150,7 +150,8 @@ section {
     color: red;
 }
 
-.textResultTallerThree {
+.textResultTallerThree,
+.textResultTallerFour {
     margin-block: 20px;
 }
 

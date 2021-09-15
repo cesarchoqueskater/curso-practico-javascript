@@ -1,3 +1,5 @@
+// 1400 50001700
+// 1400 2400
 const colombia = [];
 colombia.push({
     name: "Camila",
@@ -47,35 +49,35 @@ colombia.push({
     name: "Rosa",
     salary: 400,
 });
-colombia.push({
-    name: "Angélica",
-    salary: 400,
-});
-colombia.push({
-    name: "Tatiana",
-    salary: 400,
-});
-colombia.push({
-    name: "Lorena",
-    salary: 600,
-});
-colombia.push({
-    name: "Carolina",
-    salary: 1600,
-});
-colombia.push({
-    name: "Fernanda",
-    salary: 2600,
-});
-colombia.push({
-    name: "Nora",
-    salary: 1000,
-});
-colombia.push({
-    name: "Gisselle",
-    salary: 2000,
-});
-colombia.push({
-    name: "Bill Gates",
-    salary: 100000000,
-});
+// colombia.push({
+//     name: "Angélica",
+//     salary: 400,
+// });
+// colombia.push({
+//     name: "Tatiana",
+//     salary: 400,
+// });
+// colombia.push({
+//     name: "Lorena",
+//     salary: 600,
+// });
+// colombia.push({
+//     name: "Carolina",
+//     salary: 1600,
+// });
+// colombia.push({
+//     name: "Fernanda",
+//     salary: 2600,
+// });
+// colombia.push({
+//     name: "Nora",
+//     salary: 1000,
+// });
+// colombia.push({
+//     name: "Gisselle",
+//     salary: 2000,
+// });
+// colombia.push({
+//     name: "Bill Gates",
+//     salary: 100000000,
+// });

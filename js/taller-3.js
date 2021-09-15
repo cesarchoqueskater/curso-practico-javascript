@@ -117,6 +117,7 @@ getHalf.addEventListener("click", function() {
 
 });
 
+// Promedio
 getAverage.addEventListener("click", function() {
     let resultado = document.getElementById("resultGetCalculate");
     const sumaLista = arrayValue.reduce(
